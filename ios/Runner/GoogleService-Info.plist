@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>654758295666-rb85r4v89tbi47sas6frp0k28cu6n1g1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.654758295666-rb85r4v89tbi47sas6frp0k28cu6n1g1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBoywpBLPxoHicdBNRXo3l_oZz_cPUca5s</string>
+	<key>GCM_SENDER_ID</key>
+	<string>654758295666</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.inchrg.transportinchargeFlutter</string>
+	<key>PROJECT_ID</key>
+	<string>transportincharge-b1b3a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>transportincharge-b1b3a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:654758295666:ios:1d5e46c7e0fa49a0972aeb</string>
+	<key>DATABASE_URL</key>
+	<string>https://transportincharge-b1b3a.firebaseio.com</string>
+</dict>
+</plist>
