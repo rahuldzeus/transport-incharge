@@ -3,6 +3,7 @@ import 'package:flutter_mailer/flutter_mailer.dart';
 import 'package:transportincharge_flutter/anim/SlideAnimation.dart';
 import 'package:transportincharge_flutter/screens/HomeScreen.dart';
 import 'package:transportincharge_flutter/screens/LoginPage.dart';
+import 'package:transportincharge_flutter/utils/GroupsAndVehicles.dart';
 import 'package:transportincharge_flutter/utils/Utils.dart';
 import 'package:app_settings/app_settings.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -116,6 +117,7 @@ class DrawerWidget extends StatelessWidget {
 
   Future<String> _asyncInputDialog(BuildContext context) async {
     String issue= '';
+    String username= await Utils.getStringPref("USER_ID");
     return showDialog<String>(
       context: context,
       barrierDismissible: false, // dialog is dismissible with a tap on the barrier
@@ -127,7 +129,7 @@ class DrawerWidget extends StatelessWidget {
               new Expanded(
                   child: new TextField(
                     autofocus: true,
-                    decoration: new InputDecoration(labelText: 'Issue', hintText: 'eg. Button not working'),
+                    decoration: new InputDecoration(labelText: 'Enter the issue', hintText: 'eg. Button not working'),
                     onChanged: (value) {
                       issue = value;
                     },
@@ -138,8 +140,8 @@ class DrawerWidget extends StatelessWidget {
             FlatButton(
               child: Text('Ok'),
               onPressed: () {
-                Utils().sendMail("rahul.shwork@gmail.com");
-                Navigator.of(context).pop(teamName);
+                Utils().sendMail("support@glovision.co","Transport Incharge issue by user: $username", "$issue");
+                Navigator.of(context).pop(issue);
               },
             ),
           ],

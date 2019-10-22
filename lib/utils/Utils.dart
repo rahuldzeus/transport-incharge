@@ -11,7 +11,7 @@ import 'GroupsAndVehicles.dart';
 
 class Utils {
 
-  void sendMail(String email)=>launch("mailto:$email");
+  void sendMail(String email, String subject, String body)=>launch('mailto:$email?subject=$subject&body=$body' );
   /*Shared Preference */
   final GlobalKey<State> _keyLoader = new GlobalKey<State>();
 
@@ -99,7 +99,7 @@ class Utils {
 
   dismissDialog(BuildContext context) {
     Navigator.of(_keyLoader.currentContext, rootNavigator: true)
-        .pop(); //close the dialoge
+        .pop(); //close the dialog
   }
 
 

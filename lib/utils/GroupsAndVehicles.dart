@@ -15,7 +15,11 @@ class GroupsAndVehicles {
   static String ipaddress = null;
 
   static String selectedGroupID = null;
+  static String selectedGroupIDLabel = "GROUP_ID";
   static String selectedVehicleID = null;
+  static String selectedVehicleIDLabel = "VEHICLE_ID";
+  static String cityName= "CITY_NAME";
+  static String vehicleNo= "VEHICLE_NO";
 
   static String passwordLabel = "PASSWORD";
 
